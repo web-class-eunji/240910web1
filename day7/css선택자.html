@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <style>
+        /* * {
+            color: blue;
+        } */
+
+        h1 {
+            color: yellow;
+        }
+
+        #id_section {
+            background-color: violet;
+        }
+
+        .class_section {
+            background-color: aqua;
+        }
+
+        .web_level>li {
+            color: steelblue;
+        }
+
+        .web_level > li > a {
+            text-decoration: none;
+            color: steelblue;
+        }
+
+        .web_class_name a {
+            text-decoration: none;
+            background-color: blueviolet;
+            color: #000;
+        }
+
+        .front_end_lag ~ li {
+            background-color: wheat;
+        }
+
+        .china_food + li {
+            background-color: red;
+        }
+
+        .p_tag, h3, #span_id {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS선택자</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit sed, ipsam architecto quaerat vel esse
+        dolorem tempora, maxime unde repudiandae aperiam modi sint dolor odio doloremque est omnis voluptate.
+    </p>
+    <section id="id_section">
+        <h2>아이디선택자</h2>
+    </section>
+    <section class="class_section">
+        <h2>클래스선택자</h2>
+    </section>
+    <ul class="web_level">
+        <li>
+            <a href="#">
+                웹1
+            </a>
+        </li>
+        <li>웹2</li>
+        <li>웹3</li>
+    </ul>
+    <ul class="web_class_name">
+        <li>
+            <a href="#">
+                웹1
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                웹2
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                웹3
+            </a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="front_end_lag">JAVASCRIPT</li>
+        <li>REACT</li>
+        <li>VUE</li>
+    </ul>
+    <ul>
+        <li class="china_food">자장면</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>군만두</li>
+        <li>유산슬</li>
+    </ul>
+
+    <div>
+        <p class="p_tag">p태그입니다.</p>
+        <h3>h3태그입니다.</h3>
+        <span id="span_id">span태그입니다.</span>
+    </div>
+</body>
+
+</html>
