@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .gradient_box {
+            width: 300px;
+            height: 100px;
+            background: linear-gradient(270deg,red,orange, yellow);
+            /* to bottom : 180deg ( 기본값 ) */
+            /* to right : 90deg */
+            /* to left : 270deg */
+            /* to top : 0deg */
+        }
+
+        .radial_gradient {
+            width: 500px;
+            height: 200px;
+            background: radial-gradient(circle,pink 10%, purple 50%);
+        }
+
+        .conic_gradient {
+            width: 300px;
+            height: 300px;
+            background: conic-gradient(red,orange,yellow, green, blue, purple);
+        }
+
+        section {
+            background: linear-gradient(black,gray,white);
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient_box"></div>
+    <div class="radial_gradient"></div>
+    <div class="conic_gradient"></div>
+    <section></section>
+</body>
+</html>
