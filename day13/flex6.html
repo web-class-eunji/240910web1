@@ -1,64 +1,62 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex6</title>
+    <title>Document</title>
     <style>
         .container {
             display: flex;
-            background-color: rgb(255, 237, 240);
+            background: #ffdfdb;
             border: 1px solid #000;
             height: 200px;
-            margin-bottom: 50px;
         }
 
         .box {
             background-color: pink;
             border: 1px solid #000;
+            /* width: 50px; */
             height: 100px;
             margin: 10px;
-            width: 100px;
-            word-wrap: break-word;
-            /* flex-basis: 100px; */
-            /* 기본 너비를 조정하기 때문에 기본 너비 이상의 콘텐츠가 오면 넘쳐나는 콘텐츠의 크기를 그대로 가지게 된다. 즉 flex-basis 에 선언된 너비값은 최소한의 너비값이라고 생각하기 */
+            text-align: center;
+            line-height: 100px;
         }
 
         .grow,
         .shrink {
             border: 1px solid #000;
             margin: 5px;
-            width: 100px;
-            height: 100px;
         }
 
-        .grow:nth-child(1) {
+        .grow:nth-child(1){
             flex-grow: 1;
         }
-        .grow:nth-child(2) {
-            flex-grow: 2;
+
+        .grow:nth-child(2){
+            flex-grow: 5;
         }
-        .grow:nth-child(3) {
-            flex-grow: 3;
+
+        .grow:nth-child(3){
+            flex-grow: 2;
         }
 
         .shrink {
             width: 50%;
         }
 
-        .shrink:nth-child(1) {
+        .shrink:nth-child(1){
             flex-shrink: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">BOXBOXBOXBOXBOXBOXBOXBXOBXOBXBOXBOXBOXBXOB</div>
-        <div class="box">BOX2</div>
-        <div class="box">BOX3</div>
-        <div class="box">BOX4</div>
-        <div class="box">BOX5</div>
-        <div class="box">BOX6</div>
+        <div class="box">boxboxboxboxboxbox</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box">box5</div>
+        <div class="box">box6</div>
     </div>
 
     <div class="container">

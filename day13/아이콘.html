@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>아이콘실습</title>
     <script src="https://kit.fontawesome.com/c20f4000ab.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            background-image: url(./정샘물메인.jpg);
+            height: 890px;
+            width: 100%;
+
+        }
+
+        header {
+            display: flex;
+            padding: 16px 32px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo_box > img {
+            width: 285px;
+        }
+
+        .icon_box > i {
+            color: #fff;
+            margin: 8px;
+        }
+    </style>
 </head>
+
 <body>
-    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-    <i class="fa-solid fa-cart-shopping"></i>
-    <i class="fa-regular fa-user"></i>
-    <i class="fa-solid fa-earth-americas"></i>
+    <section class="main">
+        <header>
+            <figure class="logo_box">
+                <img src="./정샘물로고.png" alt="정샘물로고">
+            </figure>
+            <div class="icon_box">
+                <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <i class="fa-regular fa-user fa-2xl"></i>
+                <i class="fa-solid fa-earth-americas fa-2xl"></i>
+            </div>
+        </header>
+    </section>
 </body>
+
 </html>
