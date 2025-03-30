@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CU</title>
+    <style>
+        figure {
+            margin: 0;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 50px 50px 0 50px;
+            box-shadow: 10px 30px 20px 0 rgba(0,0,0,0.16);
+            position: absolute;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .간편식사 {
+            width: 200px;
+            height: 80px;
+            background: #353535;
+            color: #fff;
+            top: 0;
+            left:45%;
+        }
+
+        .음료 {
+            width: 100px;
+            height: 50px;
+            background: #6837f8;
+            color: #fff;
+            top: 90px;
+            left: 61%;
+        }
+
+        .즉석조리 {
+            width: 200px;
+            height: 80px;
+            background: #fff;
+            color: #353535;
+            top: 100px;
+            left: 50%;
+        }
+
+        .음료 > p{
+            font-size: 16px;
+            text-align: right;
+            font-weight: 900;
+        }
+
+        .즉석조리 > p,
+        .간편식사 > p {
+            font-size: 24px;
+            text-align: right;
+            font-weight: 900;
+        }
+
+        .간편식사 > figure {
+            background: url(./cu1.png);
+            width: 56px;
+            height: 56px;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <article class="relative">
+            <div class="간편식사">
+                <figure></figure>
+                <p>간편식사</p>
+            </div>
+            <div class="음료">
+                <figure></figure>
+                <p>음료</p>
+            </div>
+            <div class="즉석조리">
+                <figure></figure>
+                <p>즉석조리</p>
+            </div>
+            <div class="아이스크림림">
+                <figure></figure>
+                <p>아이스크림</p>
+            </div>
+            <div class="생활용품">
+                <figure></figure>
+                <p>생활용품</p>
+            </div>
+            <div class="식품">
+                <figure></figure>
+                <p>식품</p>
+            </div>
+            <div class="스낵">
+                <figure></figure>
+                <p>스낵</p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
